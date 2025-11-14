@@ -1,3 +1,7 @@
+Tuve problemas al subir al git la pagina, entonces lo hice desde la computadora de mi compañero Giovanni, espero no haya problemas.
+
+El easter egg esta presionando el titulo del juego.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

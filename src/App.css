@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  
+  background-image: url('./assets/fondo.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+
+
+.title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 2px solid #ff00d4;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.title:hover {
+  color: #0f0; 
+  border-color: #0f0;
+}
+
+
+.game {
+  display: flex;
+  flex-direction: row;
+  background-color: #2a2a2a; 
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #005eff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-board {
+  margin-right: 25px;
+}
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: none; 
+  border: 2px solid #0f0; 
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1; 
+  height: 80px;
+  width: 80px;
+  margin-right: -2px; 
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  color: #0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.square:hover {
+  background-color: #333; 
+}
+
+
+.square img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+.game-info h3 {
+  color: #0f0;
+  border-bottom: 1px solid #0f0;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.game-info button {
+  display: block;
+  width: 100%;
+  background-color: #444;
+  color: #e0e0e0;
+  border: none;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.game-info button:hover {
+  background-color: #7523b0;
+  color: #ffffff;
+}
+
+.game-info button:active {
+  background-color: #3782aa;
+}
+
+.game-controls {
+  margin-top: auto; 
+  padding-top: 15px;
+  border-top: 1px solid #444;
+}
+
+
+.easter-egg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.easter-egg-modal {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #0f0;
+  color: #e0e0e0;
+  text-align: left;
+  min-width: 300px;
+}
+
+.easter-egg-modal h3 {
+  color: #0f0;
+  text-align: center;
+  margin-top: 0;
+}
+
+.easter-egg-modal p {
+  line-height: 1.6;
+}
+
+.easter-egg-modal button {
+  display: block;
+  width: 100%;
+  background-color: #444;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.easter-egg-modal button:hover {
+  background-color: #555;
+}
